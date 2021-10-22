@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --white:hsl(0, 0%, 100%);
+    --blue:hsl(200, 100%, 72%);
+    --blueDark:hsl(200, 95%, 16%);
+    --grey:hsl(0, 0%, 25%);
+    --font-primary: Arial, Helvetica, sans-serif;
+}
+/* nav menu */
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: var(--blueDark);
+    justify-content: space-between;
+    display: flex
+}
+
+ul li {
+    display:inline;
+    line-height: 100px;
+    padding: 10px;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: var(--font-primary);
+}
+
+a:hover {
+    color: var(--grey);
+}
+
+
+.logo {
+    font-size: 4rem;
+    color: var(--white);
+    font-family: var(--font-primary);
+
+}
+
+.main-title {
+    color: var(--grey);
+    font-size: 3rem;
+    font-family: var(--font-primary);
+    text-align: center;
+}
+
+.main-title > span {
+    text-decoration: underline;
+}
+
+.secondary-title {
+    color: var(--grey);
+    font-size: 2rem;
+    font-family: var(--font-primary);
+}
+
+body {
+    background-color: var(--white);
+}
+
+p {
+    margin: 20px;
+    font-size: 1.2rem;
+    font-family: var(--font-primary);
+    color: var(--grey);
+}
+
+.container {
+    width: 100vw;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.loja {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-row-gap: 100px;
+    grid-column-gap: 20px;
+}
+
+.item {
+    padding: 15px;
+    background-color: var(--blue);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.item p {
+    color: var(--blueDark);
+    font-family: var(--font-primary);
+}
+
+#sobre {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+button, .btn {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    background: var(--blueDark);
+    color: var(--white);
+    font-weight: bolder;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 20px var(--grey)
+}
+
+button:hover, .btn:hover{
+    border: 2px solid var(--blueDark);
+    background: var(--grey);
+    color: var(--blue);
+    box-shadow: 5px 5px 10px var(--blueDark);
+}
+img{
+    width: 100%;
+}
+
+footer {
+    height: 100px;
+    background-color: var(--blueDark);
+}
+
+footer p {
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+}
